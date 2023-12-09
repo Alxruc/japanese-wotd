@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   document.getElementById("dailyWord").textContent = localStorage.word;
   document.getElementById("reading").textContent = localStorage.reading;
+  
+  const button = document.getElementById("dictButton");
+  button.addEventListener('click', () => {
+    console.log("clicked");
+    var link = "https://jisho.org/search/";
+    link = link + localStorage.word;
+    window.open(link);
+  })
 
 });
 
