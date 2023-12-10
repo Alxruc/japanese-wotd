@@ -2,7 +2,9 @@
     "manifest_version": 3,
     "name": "Japenese Word Of The Day",
     "description": "Gives you a random Japanese word daily",
-    "version": "1.0",
+    "version": "1.1",
+    "key": "",
+
 
     "action": {
       "default_popup": "popup.html",
@@ -11,9 +13,17 @@
 
     "content_scripts": [
       {
+        "matches": ["https://jisho.org/*"],
         "js": ["word.js"]
       }
-    ]
+    ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{709a4737-b158-4b04-bb3a-e7d5eefad662}"
+      }
+    }
+    
     
   }
   
