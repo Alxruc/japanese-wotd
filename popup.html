@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title>WOTD</title>
         <style>
           body {
@@ -13,21 +14,25 @@
           }
         </style>
       </head>
-      <body>
+      <body class="container">
         <script type="text/javascript" src="./word.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        
         <div style="text-align:center;">
             <p id="todaysDate">Today's date is: </p>
         </div>
+
         <div style="text-align: center;">
-            <p>Your Japanese WOTD is:</p>
+            <h3>Your Japanese word of the day is:</h3>
         </div>
+
         <div style="text-align: center;">
-            <p id="dailyWord"> - </p>
+            <h2 id="dailyWord"> - </h3>
         </div>
+
         <div style="text-align: center;">
-          <p id="reading"> - </p>
+          <h4 id="reading"> - </h4>
       </div>
-        <button id="dictButton">Find out more</button>   
-        
+        <button id="dictButton">LOOK UP</button>   
       </body>
 </html>
