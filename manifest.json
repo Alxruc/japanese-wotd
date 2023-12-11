@@ -1,14 +1,17 @@
 {
     "manifest_version": 3,
-    "name": "Japenese Word Of The Day",
+    "name": "Japanese Word Of The Day",
     "description": "Gives you a random Japanese word daily",
-    "version": "1.1",
-    "key": "",
+    "version": "1.1.1",
+    "icons": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
 
 
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icons/icon-48.png"
+      "default_popup": "popup.html"
+
     },
 
     "content_scripts": [
