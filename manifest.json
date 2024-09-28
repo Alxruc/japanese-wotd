@@ -20,6 +20,11 @@
         "matches": ["https://jisho.org/*"],
         "js": ["word.js"]
       }
-    ]    
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{709a4737-b158-4b04-bb3a-e7d5eefad662}"
+      }
+    }
   }
   
