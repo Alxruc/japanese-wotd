@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-        <title>WOTD</title>
-        <style>
-          body {
-            width: 200px;
-          }
-          button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 5px;
-          }
-        </style>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Japanese Word of the Day</title>
+        <link rel="stylesheet" href="style.css">
       </head>
+      
       <body class="container">
         <script type="text/javascript" src="./word.js"></script>
-        <link rel="stylesheet" href="./style.css">
-        
-        <div style="text-align:center;">
-            <p id="todaysDate">Today's date is: </p>
-        </div>
+          <div class="card" id="main-view">
+              <div>
+                <button id="history-btn" class="icon-button" title="History">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </button>
+             </div>
+              <div class="date" id="todaysDate"> - </div>
+              <div id="text"> Your Japanese Word of the Day Is: </div>
+              <div class="word" id="dailyWord"> - </div>
+              <div class="reading" id="reading"> - </div>
+              <button id="lookup-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  Look Up
+              </button>
+          </div>
+         
+          <div id="history-view" style="display: none;">
+            <div>
+              <button id="back-btn" class="icon-button" title="Back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <h2>History</h2>
+            </div>
+            <div>
+              <ul id="history-list"></ul>
+            </div>
 
-        <div style="text-align: center;">
-            <h3>Your Japanese word of the day is:</h3>
-        </div>
+          </div>
 
-        <div style="text-align: center;">
-            <h2 id="dailyWord"> - </h3>
-        </div>
-
-        <div style="text-align: center;">
-          <h4 id="reading"> - </h4>
-      </div>
-        <button id="dictButton">LOOK UP</button>   
       </body>
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Word of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-view">
+        <button id="history-btn" class="icon-button" title="History">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+        </button>
+        <div id="current-date"></div>
+        <div id="japanese-word"></div>
+        <div id="word-reading"></div>
+        <button id="lookup-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Look Up
+        </button>
+    </div>
+    <div id="history-view" style="display: none;">
+        <button id="back-btn" class="icon-button" title="Back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </button>
+        <h2>History</h2>
+        <ul id="history-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
